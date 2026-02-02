@@ -5,23 +5,18 @@ body {
   height: 100%;
 }
 
-
 #id1 {
   width: 100%;
   height: 100%;
   background-image: url("img/copa.jpg");
   background-size: cover;
   background-position: center;
-
 }
-
-
 
 div {
   position: absolute;
   border: 1px solid #000000;
 }
-
 
 .interior {
   width: 30%;
@@ -29,31 +24,34 @@ div {
   border-radius: 50px;
   box-shadow: 10px 10px gray;
   transition: transform 0.5s;
-
 }
 
 .interior:hover {
   transform: rotateY(180deg);
 }
 
-
 .name {
   display: none;
   width: 100%;
-  height: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 0;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 35%;
   background-color: beige;
-  top: 8%;
+  border-radius: 50px;
+  box-sizing: border-box;
 }
 
-
-.interior:hover .img {
-  display: none;
-}
 .interior:hover .name {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
 }
+
 
 
 .superior {
@@ -65,22 +63,24 @@ div {
 }
 
 .izquierda {
-  left: 2%;
+  left: 3%;
+
 }
+
 
 .derecha {
   right: 2%;
 }
 
 .izquierdas {
-  left: 35%;
-  top: 75px;
+
+  top: 60px;
+  right: 34%;
 }
 
 .derechas {
   right: 35%;
 }
-
 
 #id2 {
   background-image: url("img/cr.jpg");
@@ -91,7 +91,7 @@ div {
 #id3 {
   background-image: url("img/ronaldhiño.jpg");
   background-position: center;
-  background-size: 500px 500px;
+  background-size: 400px 400px;
 }
 
 #id4 {
@@ -122,6 +122,3 @@ h1 {
   text-align: center;
 }
 
-#id1 > div {
-    cursor: pointer;
-}
