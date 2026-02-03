@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+nav {
+
+  top: 120px;
+  left: 8px;
+  width: 200px;
+  height: 800px;
+  border: 2px solid #0c0c0c;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.logo{
+    width: 100;
+    height: 80px;
+    top: 10px;
+    left: 0px;
+    position: fixed
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+#id1 {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/copa.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  z-index: -1; 
+  
+}
+
+
+aside {
+  position: fixed;
+  top: 120px;
+  right: 0px;
+  width: 200px;
+  height: 800px;
+  border: 2px solid #333;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.recuadro2 {
+  border: 2px solid #333;  
+}
+aside div {
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interior {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  border-radius: 50px;
+  box-shadow: 10px 10px gray;
+  transition: transform 0.5s;
+  
+}
+
+.interior:hover {
+  transform: rotateY(180deg);
+}
+
+.name {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: beige;
+  border-radius: 50px;
+  font-size: 24px;
+}
+
+.interior:hover .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.superior {
+  top: 20%;
+}
+
+.inferior {
+  bottom: 15%;
+}
+
+.izquierda {
+  left: 25%;
+}
+
+.derecha {
+  right: 25%;
+}
+
+#id2 {
+  background-image: url("img/cr.jpg");
+  background-size: cover;
+}
+
+#id3 {
+  background-image: url("img/ronaldhiño.jpg");
+  background-size: cover;
+}
+
+#id4 {
+  background-image: url("img/messi.jpg");
+  background-size: cover;
+}
+
+#id5 {
+  background-image: url("img/neymar.jpg");
+  background-size: cover;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  z-index: 1000;
+}
+
+.btn-enviar {   
+  margin-bottom: 10px; 
+}
